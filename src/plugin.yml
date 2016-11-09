@@ -1,0 +1,49 @@
+# This determines the command prefix when there are conflicts (/name:home, /name:help, etc.)
+name: Essencial
+main: br.com.gameking.spigot.essencial.Essencial
+# Note to developers: This next line cannot change, or the automatic versioning system will break.
+version: Beta
+website: http://gameking.com.br/Spigot/Essencial
+description: Fornece um conjunto essencial de comandos basicos para o Spigot.
+authors: [GKRedBack]
+commands:
+  tp:
+    description: Teleportar para um jogador.
+    usage: /<command> <jogador> [outrojogador]
+    aliases: [tele,etele,teleport,eteleport,etp,tp2p,etp2p]
+  tpa:
+    description: Pedido de teletransporte para o jogador especificado.
+    usage: /<command> <jogador>
+    aliases: [call,ecall,etpa,tpask,etpask]
+  tpatodos:
+    description: Solicita que todos os jogadores online teleportem ate voce.
+    usage: /<command> <jogador>
+    aliases: [etpaall,tpall]
+  tpaceitar:
+    description: Aceita a solicitacao de teleporte.
+    usage: /<command> [outro jogador]
+    aliases: [etpaccept,tpyes,etpyes,tpaccept]
+  tpaaqui:
+    description: Solicitar que o jogador especificado teleporte para voce.
+    usage: /<command> <jogador>
+    aliases: [etpahere,tpahere]
+  tptodos:
+    description: Teleportar todos os jogadores online para outro jogador.
+    usage: /<command> <jogador>
+    aliases: [etpall,tpall]
+  tpnegar:
+    description: Rejeita o teleporte.
+    usage: /<command>
+    aliases: [etpdeny,tpno,etpno,tpdeny]
+  tpaqui:
+    description: Teleporte o jogador ate voce.
+    usage: /<command> <jogador>
+    aliases: [s,etphere]
+  tpo:
+    description: Teleport override for tptoggle.
+    usage: /<command> <player> [otherplayer]
+    aliases: [etpo]
+permissions:
+  essencial.*:
+    default: op
+    description: Dar aos jogadores com tudo op por padrao
